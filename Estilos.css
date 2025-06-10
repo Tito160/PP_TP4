@@ -1,0 +1,43 @@
+/*Ejercicio 1: Encontrar 5 maneras distintas de seleccionar el elemento con id #especial y aplicarle un color de fondo distinto en cada caso./*
+/* 1. Selector por ID directamente */
+#especial {
+   background-color: lightblue;
+}
+
+
+/* 2. Selector de atributo */
+div[id="especial"] {
+   background-color: lightgreen;
+}
+
+
+/* 3. Selector descendente (desde la clase .contenedor al id) */
+.contenedor #especial {
+   background-color: lightcoral;
+}
+
+
+/* 4. Selector de tipo con ID (especificando que es un div con ese ID) */
+div#especial {
+   background-color: lightgoldenrodyellow;
+}
+
+
+/* 5. Selector con pseudo-clase :is() (útil cuando se combinan selectores) */
+:is(section, div) > #especial {
+   background-color: lightsalmon;
+}
+
+
+/*<!-- Ejercicio 2: Seleccionar todos los elementos pares de una lista con clase .lista-items y cambiar su color de fondo.*/
+.lista-items li:nth-child(even){
+   background-color: aqua;
+}
+
+
+/*<!-- Ejercicio 3: Utilizar pseudo-clases y pseudo-elementos para modificar la apariencia de elementos específicos.+/
+
+
+
+
+
