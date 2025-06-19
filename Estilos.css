@@ -27,7 +27,28 @@ div#especial {
 }
 
 
-/*<!-- Ejercicio 3: Utilizar pseudo-clases y pseudo-elementos para modificar la apariencia de elementos específicos.+/
+/*<!-- Ejercicio 3: Utilizar pseudo-clases y pseudo-elementos para modificar la apariencia de elementos específicos.*/
+#ejercicio3 button:hover {
+   background-color: black;
+   color: aqua; 
+}
+#ejercicio3 p::first-letter{
+   color: red;
+}
+#ejercicio3 p::selection{
+   background-color: yellow;
+}	
+#ejercicio3 input[type="text"]:focus{
+   border: 5px solid red; 
+}
+#ejercicio3 input[type="checkbox"]:checked{
+   color: greenyellow;
+}
+#ejercicio3 a:hover{
+   color: aqua;
+}
+/*<!-- Ejercicio 4: Utilizar selectores de atributos para aplicar estilos a elementos específicos.*/
+
 
 
 
