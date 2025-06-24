@@ -3,26 +3,30 @@
 #especial {
    background-color: lightblue;
 }
+
 /* 2. Selector de atributo */
 div[id="especial"] {
    background-color: lightgreen;
 }
+
 /* 3. Selector descendente (desde la clase .contenedor al id) */
 .contenedor #especial {
    background-color: lightcoral;
 }
+
 /* 4. Selector de tipo con ID (especificando que es un div con ese ID) */
 div#especial {
    background-color: lightgoldenrodyellow;
 }
+
 /* 5. Selector con pseudo-clase :is() (útil cuando se combinan selectores) */
-:is(section, div) > #especial {
+:is(section, div)>#especial {
    background-color: lightsalmon;
 }
 
 
 /*<!-- Ejercicio 2: Seleccionar todos los elementos pares de una lista con clase .lista-items y cambiar su color de fondo.*/
-.lista-items li:nth-child(even){
+.lista-items li:nth-child(even) {
    background-color: aqua;
 }
 
@@ -30,23 +34,29 @@ div#especial {
 /*<!-- Ejercicio 3: Utilizar pseudo-clases y pseudo-elementos para modificar la apariencia de elementos específicos.*/
 #ejercicio3 button:hover {
    background-color: black;
-   color: aqua; 
-}
-#ejercicio3 p::first-letter{
-   color: red;
-}
-#ejercicio3 p::selection{
-   background-color: yellow;
-}	
-#ejercicio3 input[type="text"]:focus{
-   border: 5px solid red; 
-}
-#ejercicio3 input[type="checkbox"]:checked{
-   color: greenyellow;
-}
-#ejercicio3 a:hover{
    color: aqua;
 }
+
+#ejercicio3 p::first-letter {
+   color: red;
+}
+
+#ejercicio3 p::selection {
+   background-color: yellow;
+}
+
+#ejercicio3 input[type="text"]:focus {
+   border: 5px solid red;
+}
+
+#ejercicio3 input[type="checkbox"]:checked {
+   color: greenyellow;
+}
+
+#ejercicio3 a:hover {
+   color: aqua;
+}
+
 /*<!-- Ejercicio 4: Utilizar selectores de atributos para aplicar estilos a elementos específicos.*/
 #ejercicio4 button:hover {
    background-color: royalblue;
@@ -66,7 +76,7 @@ div#especial {
    font-weight: bold;
 }
 
-#ejercicio4 input:focus + p {
+#ejercicio4 input:focus+p {
    color: red;
 }
 
@@ -76,15 +86,15 @@ div#especial {
 }
 
 /*Ejercicio 7: Seleccionar todos los div que sean hijos directos de otro div y ponerles un borde.*/
-#ejercicio7 .padre>div{
+#ejercicio7 .padre>div {
    border-color: black;
    border-style: dotted;
 }
 
 /*Ejercicio 8: Seleccionar el último elemento de una lista ordenada y cambiar su tamaño de fuente.*/
 .lista-ordenada li:last-child {
-   font-size: 1.5em; 
-   color: darkblue;  
+   font-size: 1.5em;
+   color: darkblue;
 }
 
 /*Ejercicio 9: Seleccionar todos los enlaces que no tengan el atributo target="_blank" y subrayarlos.*/
@@ -95,11 +105,12 @@ div#especial {
 
 /*Ejercicio 10: Seleccionar todos los párrafos dentro de un article y cambiar su interlineado.*/
 #ejercicio10 article p {
-   line-height: 1.8; /* Aumenta el interlineado (espaciado entre líneas) */
+   line-height: 1.8;
+   /* Aumenta el interlineado (espaciado entre líneas) */
 }
 
 /*Ejercicio 11: Seleccionar cualquier h2 que tenga un span dentro y cambiar su color.*/
-#ejercicio11 h2 span{
+#ejercicio11 h2 span {
    color: aqua;
 }
 
@@ -110,7 +121,7 @@ div#especial {
 }
 
 /*Ejercicio 13: Seleccionar el tercer elemento de una lista desordenada y ponerle cursiva.*/
-#ejercicio13 li:nth-child(3){
+#ejercicio13 li:nth-child(3) {
    color: red;
    font-style: italic;
 }
@@ -121,9 +132,49 @@ div#especial {
 }
 
 /*Ejercicio 15: Seleccionar cualquier div que tenga al menos dos clases y aplicarle una sombra.*/
-#ejercicio15 div{
-   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); 
+#ejercicio15 div {
+   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
    padding: 10px;
    background-color: #f9f9f9;
 }
 
+/*Ejercicio 16: Seleccionar los button cuando el usuario pase el cursor sobre ellos y cambiar su color de fondo.*/
+#ejercicio16 button:hover {
+   background-color: yellowgreen;
+}
+
+/*Ejercicio 17: Seleccionar los input de tipo text dentro de un form y cambiar su borde.*/
+#ejercicio17 form input[type="text"] {
+   border: 2px solid royalblue;
+   padding: 5px;
+   border-radius: 4px;
+}
+
+/*Ejercicio 18: Seleccionar cualquier p que siga inmediatamente a un h3 y cambiar su color.*/
+#ejercicio18 h3+p {
+   color: darkgreen;
+   font-weight: lighter;
+}
+
+/*Ejercicio 19: Seleccionar los enlaces cuando el usuario ya los haya visitado y hacerlos más opacos.*/
+#ejercicio19 a:visited {
+   opacity: 2;
+}
+
+/*Ejercicio 20: Seleccionar todos los elementos strong dentro de un p y cambiar su color.*/
+#ejercicio20 p strong {
+   color: crimson;
+}
+
+/*Ejercicio 21: Seleccionar cualquier input que esté deshabilitado y ponerlo en color gris.*/
+#ejercicio21 input:disabled {
+   background-color: yellow;
+   color: red;
+   border: 10px solid aqua;
+}
+
+/*Ejercicio 22: Seleccionar todos los li dentro de un nav y cambiar su espaciado.*/
+#ejercicio22 nav li {
+   margin-bottom: 10px; 
+   padding-left: 10px;
+}
