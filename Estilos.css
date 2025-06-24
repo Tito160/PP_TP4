@@ -48,9 +48,82 @@ div#especial {
    color: aqua;
 }
 /*<!-- Ejercicio 4: Utilizar selectores de atributos para aplicar estilos a elementos específicos.*/
+#ejercicio4 button:hover {
+   background-color: royalblue;
+   color: white;
+   border: 3px solid navy;
+   cursor: pointer;
+}
 
+#ejercicio4 button:active {
+   background-color: navy;
+   transform: scale(0.98);
+}
 
+#ejercicio4 input:focus {
+   border: 3px solid limegreen;
+   background-color: #f0fff0;
+   font-weight: bold;
+}
 
+#ejercicio4 input:focus + p {
+   color: red;
+}
 
+/*Ejercicio 6: Seleccionar el primer párrafo de cada sección y aplicarle una negrita.*/
+#ejercicio6 p:first-of-type {
+   font-weight: bold;
+}
 
+/*Ejercicio 7: Seleccionar todos los div que sean hijos directos de otro div y ponerles un borde.*/
+#ejercicio7 .padre>div{
+   border-color: black;
+   border-style: dotted;
+}
+
+/*Ejercicio 8: Seleccionar el último elemento de una lista ordenada y cambiar su tamaño de fuente.*/
+.lista-ordenada li:last-child {
+   font-size: 1.5em; 
+   color: darkblue;  
+}
+
+/*Ejercicio 9: Seleccionar todos los enlaces que no tengan el atributo target="_blank" y subrayarlos.*/
+#ejercicio9 a:not([target="_blank"]) {
+   text-decoration: underline;
+   text-decoration-color: red;
+}
+
+/*Ejercicio 10: Seleccionar todos los párrafos dentro de un article y cambiar su interlineado.*/
+#ejercicio10 article p {
+   line-height: 1.8; /* Aumenta el interlineado (espaciado entre líneas) */
+}
+
+/*Ejercicio 11: Seleccionar cualquier h2 que tenga un span dentro y cambiar su color.*/
+#ejercicio11 h2 span{
+   color: aqua;
+}
+
+/*Ejercicio 12: Seleccionar todas las imágenes que tengan un alt definido y agregarles un borde.*/
+#ejercicio12 img[alt] {
+   border: 3px solid darkgreen;
+   padding: 4px;
+}
+
+/*Ejercicio 13: Seleccionar el tercer elemento de una lista desordenada y ponerle cursiva.*/
+#ejercicio13 li:nth-child(3){
+   color: red;
+   font-style: italic;
+}
+
+/*Ejercicio 14: Seleccionar todos los elementos impares de una tabla y cambiar su color de fondo.*/
+#ejercicio14 table tr:nth-child(odd) {
+   background-color: yellowgreen
+}
+
+/*Ejercicio 15: Seleccionar cualquier div que tenga al menos dos clases y aplicarle una sombra.*/
+#ejercicio15 div{
+   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); 
+   padding: 10px;
+   background-color: #f9f9f9;
+}
 
